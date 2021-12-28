@@ -46,6 +46,15 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
   
   -Were you able to achieve the target model performance?
     No.  
+    
   -What steps did you take to try and increase model performance?
   
+    - After the initial model was compiled and trained, we had an accuracy of 72.43% with loss of 0.5576
+    - After creating a callback and rerunning the model, we had an accuracy of 72.63% with loss of 0.5591
+    - After running kerastuner for 138 trials, the best accuracy achieved was 72.93% with loss of 0.5507
+    - After reducing the Organization field to 3 identifiers from 4, and after dropping the Status column, we refit, retransformed, and rescaled our dataframe, before adding 4 additional layers and 1000 nodes per layer.  We alternated between the tanh and relu functions between layers before using sigmoid as the output layer, with adamax as the optimizer.  The model results were 72.62% accuracy and 0.5565 loss.
+    - After running the kerastuner on the new dataframe for 2 hours and 26 minutes with 812 trials, the best accuracy achielved was 73.01% with loss of 0.5507.
+    - After setting the activation functions to relu, relu, tanh, relu, relu, tanh and rerunning the model on the reformulated/rescaled data, we achieved an accuracy of 72.62% with loss of 0.5565.
+    - After running the kerastuner 504 trials over nearly 10 hours on the new model with the reformulated/rescaled data, and altering the kerastuner options to include 9 different activator choices, and 1-1000 nodes, the best accuracy achieved was 72.99%.
+    
 ## Summary
