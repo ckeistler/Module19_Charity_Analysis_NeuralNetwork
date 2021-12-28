@@ -25,7 +25,8 @@ Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’
 ##### Data Preprocessing
 
   -What variable(s) are considered the target(s) for your model?
-  
+    IS_SUCCESSFUL is the target variable field.  The goal is to predict whether applicants will be successful if funded by Alphabet Soup.
+    
   -What variable(s) are considered to be the features for your model?
   
   -What variable(s) are neither targets nor features, and should be removed from the input data?
