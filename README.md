@@ -19,7 +19,10 @@ With our module 19 content, covering machine learning and neural networks, we us
 
 ## Results
 
-#### Data Preprocessing
+#### Deliverable 1
+Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’ll need to preprocess the dataset in order to compile, train, and evaluate the neural network model later in Deliverable 2.
+
+##### Data Preprocessing
 
   -What variable(s) are considered the target(s) for your model?
   
