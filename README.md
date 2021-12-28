@@ -35,15 +35,17 @@ Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’
     
    ![D4Q3](https://user-images.githubusercontent.com/88443672/147592000-3c51e1b4-1674-4867-a04f-b8daf7205061.png)
 
-#### Deliverable 2
+#### Deliverable 2 & 3
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
+
+Using your knowledge of TensorFlow, optimize your model in order to achieve a target predictive accuracy higher than 75%. If you can't achieve an accuracy higher than 75%, you'll need to make at least three attempts to do so.
 
 ##### Compiling, Training, and Evaluating the Model
 
   -How many neurons, layers, and activation functions did you select for your neural network model, and why?
   
   -Were you able to achieve the target model performance?
-  
+    No.  
   -What steps did you take to try and increase model performance?
   
 ## Summary
