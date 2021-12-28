@@ -5,13 +5,13 @@
   
 ## Results
 
-#### Subtitles are cool
-  -
+#### Data Preprocessing
   -
   -
   -
   -
   -
   
+#### Compiling, Training, and Evaluating the Model
   
 ## Summary
