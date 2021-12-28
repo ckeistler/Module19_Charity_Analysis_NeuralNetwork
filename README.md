@@ -30,7 +30,7 @@ With our module 19 content, covering machine learning and neural networks, we us
 #### Deliverable 2
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
-#### Compiling, Training, and Evaluating the Model
+##### Compiling, Training, and Evaluating the Model
 
   -How many neurons, layers, and activation functions did you select for your neural network model, and why?
   
