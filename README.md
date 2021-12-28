@@ -45,6 +45,7 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
   -How many neurons, layers, and activation functions did you select for your neural network model, and why?
   
   -Were you able to achieve the target model performance?
+  
     No.  
     
   -What steps did you take to try and increase model performance?
