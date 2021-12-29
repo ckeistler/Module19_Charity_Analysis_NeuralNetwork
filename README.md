@@ -49,13 +49,26 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
     No.  
     
   -What steps did you take to try and increase model performance?
-  
+    
+    ##### Trial Stage 1
     - After the initial model was compiled and trained, we had an accuracy of 72.43% with loss of 0.5576
     - After creating a callback and rerunning the model, we had an accuracy of 72.63% with loss of 0.5591
     - After running kerastuner for 138 trials, the best accuracy achieved was 72.93% with loss of 0.5507
+    
+    ##### Trial Stage 2
     - After reducing the Organization field to 3 identifiers from 4, and after dropping the Status column, we refit, retransformed, and rescaled our dataframe, before adding 4 additional layers and 1000 nodes per layer.  We alternated between the tanh and relu functions between layers before using sigmoid as the output layer, with adamax as the optimizer.  The model results were 72.62% accuracy and 0.5565 loss.
     - After running the kerastuner on the new dataframe for 2 hours and 26 minutes with 812 trials, the best accuracy achielved was 73.01% with loss of 0.5507.
     - After setting the activation functions to relu, relu, tanh, relu, relu, tanh and rerunning the model on the reformulated/rescaled data, we achieved an accuracy of 72.62% with loss of 0.5565.
     - After running the kerastuner 504 trials over nearly 10 hours on the new model with the reformulated/rescaled data, and altering the kerastuner options to include 9 different activator choices, and 1-1000 nodes, the best accuracy achieved was 72.99%.
+    
+    ##### Trial Stage 3
+    - We then took the initial application_df and dropped both the STATUS and SPECIAL_CONSIDERATIONS columns and then refit, retransformed, and rescaled our dataframe.  From there we ran a model with 4 layers of 500 nodes with relu and tahn alternating, and with sigmoid as the output layer.  We ran several optimizers against the same base for analysis.
+      - Adamax: 72.618% accuracy, 0.5598 loss
+      - SGD: 72.606% accuracy, 0.5521 loss
+      - Adam: 72.68% accuracy, 0.5589 loss
+      - Rmsprop: 72.58% accuracy, 0.5614 loss
+      - Nadam: 72.37% accuracy, 0.5598 loss
+      - Ftrl: 53.32% accuracy, 0.6911 loss
+      
     
 ## Summary
