@@ -56,13 +56,15 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
     - I then ran kerastuner using 2-4 layers with 100-200 neurons per layer, with relu, tanh, elu, softsign, softplus, elu, and selu as activation options.  Adam was used as the optimizer, with max epochs set to 100.
         - After running 1231 trials had run over the course of just under 4 hours, the best accuracy achieved was 73.01% with 0.5524 loss using elu as the activator.
         
-    ![KST1](https://user-images.githubusercontent.com/88443672/147682342-2ef42892-53d3-49b2-b665-f686a978cc6e.png)
+![KST1](https://user-images.githubusercontent.com/88443672/147682342-2ef42892-53d3-49b2-b665-f686a978cc6e.png)
 
 ##### Trial Stage 2
     - After reducing the Organization field to 3 identifiers from 4, and after dropping the Status column, we refit, retransformed, and rescaled our dataframe, before adding 4 additional layers and 200 nodes per layer.  We alternated between the softsign and elu activators in one trial, alongside using a combo of relu and elu for another. The softsign/elu trial produced an accuracy of 72.58% with loss of 0.5577, while the reul/elu trial produced an accuracy of 72.54% with loss of 0.5783.
     - I then ran the kerastuner on the new dataframe for ~4.5 hours across 928 trials.  Relu, softsign, and elu were set as activators, with 3-4 hidden layers, adam as the optimizer, and neurons ranging from 100-200 (increments of 20).  Max epochs was set to 150.
         - The highest accuracy achieved was via using relu as the activator with 4 layers: Accuracy 73.0% with loss of 0.5599
-    - Before trying to alter the data one more time, I ran another trial with 8 layers of 300 nodes for 100 epochs with relu as the activator and adam as the optimizer.  The accuracy result was 72.50% with loss of 0.5808.  
+    - Before trying to alter the data one more time, I ran another trial with 8 layers of 300 nodes for 100 epochs with relu as the activator and adam as the optimizer.  The accuracy result was 72.50% with loss of 0.5808.
+    
+![KST2](https://user-images.githubusercontent.com/88443672/147684452-e3c0dbec-ac2c-4f2a-bde3-bb0c040c12fb.png)
               
 ##### Trial Stage 3
     - With every trial failing to yield 75% accuracy, I then took the initial application_df and dropped both the STATUS and SPECIAL_CONSIDERATIONS columns and then refit, retransformed, and rescaled our dataframe.  From there we ran a model with 4 layers of 500 nodes across 100 epochs.  We tried several different optimizers against the same base model for analysis.
