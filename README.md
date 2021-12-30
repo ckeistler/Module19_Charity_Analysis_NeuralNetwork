@@ -54,7 +54,7 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
     - After the initial model was compiled and trained, we had an accuracy of 72.65% with loss of 0.5564
     - After creating a callback and rerunning the model, we had an accuracy of 72.56% with loss of 0.5635
     - I then ran kerastuner using 2-4 layers with 100-200 neurons per layer, with relu, tanh, elu, softsign, softplus, elu, and selu as activation options.  Adam was used as the optimizer, with max epochs set to 100.
-        - After running 1231 trials had run over the course of just under 4 hours, the best accuracy achieved was 73.01% with 0.5524 loss using elu as the activator.
+        - After running 1231 trials had run over the course of just under 4 hours, the best accuracy achieved was 73.01% with 0.5524 loss using elu as the activator.  That said, this result was only over the course of 34 epochs, and none of the top 10 results exceeded 34 epochs.
         
 ![KST1](https://user-images.githubusercontent.com/88443672/147682342-2ef42892-53d3-49b2-b665-f686a978cc6e.png)
 
