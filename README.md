@@ -75,8 +75,15 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
       - Nadam: 72.61% accuracy, 0.6159 loss
       - Ftrl: 53.32% accuracy, 0.6911 loss
       
+  ![OptimizersTest](https://user-images.githubusercontent.com/88443672/147887217-6a8d3b2b-a228-43be-8d07-b87793a1a78d.png)
+    
     - The SGD, Nadam, Adamax optimizers provided the best results.
     - I then ran the kerastuner with settings of 0-600 nodes with 6-8 hidden layers, setting the nodes in increments of 200.  SGD was used as the optimizer, and Relu, Elu, and Softsign were added as activation options.  The tuner was run with max epochs set to 150, and across nearly 2.5 hours, 244 trials were run.  The top result was via using Relu as the activator across the max of 150 epochs, with 8 layers, and accuracy of 72.91%.  
+    
+   ![KST3](https://user-images.githubusercontent.com/88443672/147887220-9ee8b9c1-e29d-49ad-bf6f-e2ef21e3cf53.png)
+ 
     - One further kerastuner test was run with with Reul, Elu, Softsign, and Softmax set as activator options.  Hidden layers were set to a range of 2 to 8, and nodes were set between 10 and 50 in increments of 10, with max epochs at 100.  After ~3.5 hours and 1270 trials, the top result was via the Relu activator across 100 epochs, at 73.00% accuracy and 0.5511 loss.  7 of the top 10 results included runs that ran the full max of 100 epochs, 3 of which had initial epochs set at 0.  The range in acccuracy between the top 10 results was 72.92% to 73.00%.  
     
+  ![KST4](https://user-images.githubusercontent.com/88443672/147887224-ea4daff4-ec6e-47b6-8956-7f2976c109d2.png)
+  
 ## Summary
