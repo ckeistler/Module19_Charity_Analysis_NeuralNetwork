@@ -84,6 +84,7 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
  
     - One further kerastuner test was run with with Reul, Elu, Softsign, and Softmax set as activator options.  Hidden layers were set to a range of 2 to 8, and nodes were set between 10 and 50 in increments of 10, with max epochs at 100.  After ~3.5 hours and 1270 trials, the top result was via the Relu activator across 100 epochs, at 73.00% accuracy and 0.5511 loss.  7 of the top 10 results included runs that ran the full max of 100 epochs, 3 of which had initial epochs set at 0.  The range in acccuracy between the top 10 results was 72.92% to 73.00%.  
     
-  ![KST4](https://user-images.githubusercontent.com/88443672/147887224-ea4daff4-ec6e-47b6-8956-7f2976c109d2.png)
+  ![KST4](https://user-images.githubusercontent.com/88443672/147887270-e60de181-f4bc-474a-ab10-580748b73c17.png)
+
   
 ## Summary
