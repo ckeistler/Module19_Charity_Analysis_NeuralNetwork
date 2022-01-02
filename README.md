@@ -75,5 +75,8 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
       - Nadam: 72.61% accuracy, 0.6159 loss
       - Ftrl: 53.32% accuracy, 0.6911 loss
       
+    - The SGD, Nadam, Adamax optimizers provided the best results.
+    - I then ran the kerastuner with settings of 0-600 nodes with 6-8 hidden layers, setting the nodes in increments of 200.  SGD was used as the optimizer, and Relu, Elu, and Softsign were added as activation options.  The tuner was run with max epochs set to 150, and across nearly 2.5 hours, 244 trials were run.  
+    
     
 ## Summary
