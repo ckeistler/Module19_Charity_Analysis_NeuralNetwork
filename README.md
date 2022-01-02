@@ -25,10 +25,13 @@ Using your knowledge of Pandas and the Scikit-Learn’s StandardScaler(), you’
 ##### Data Preprocessing
 
   -What variable(s) are considered the target(s) for your model?
+  
     IS_SUCCESSFUL is the target variable field.  The goal is to predict whether applicants will be successful if funded by Alphabet Soup.
     
   -What variable(s) are considered to be the features for your model?
   
+    APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, and INCOME_AMT.
+    
   -What variable(s) are neither targets nor features, and should be removed from the input data?
   
     EIN and NAME are both identification columns, which are neither target or feature elements of the model.  We remove both columns from our dataframe prior fitting, transforming, or scaling with the below code. 
@@ -44,11 +47,15 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
 
   -How many neurons, layers, and activation functions did you select for your neural network model, and why?
   
+    Variable as outlined below.  I tried many combinations of hidden layers, activators, optimizers, and nodes/layer.
+  
   -Were you able to achieve the target model performance?
   
     No.  
     
   -What steps did you take to try and increase model performance?
+  
+  Please see the below trial stages as outlined.
     
 ##### Trial Stage 1
     - After the initial model was compiled and trained, we had an accuracy of 72.65% with loss of 0.5564
@@ -88,3 +95,4 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
 
   
 ## Summary
+All attempts to reach 75% accuracy failed, and the max achieved was ~73%.  Looking at the data provided, the overall succes rate of all datapoints was 53.2%.  The initial low succes rate, in combination with factors that when indiviually viewed showed very few instances of a high success rates and high data counts, leads to a model where getting a result of even 73% was very difficult.
