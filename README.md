@@ -95,4 +95,4 @@ Using your knowledge of TensorFlow, optimize your model in order to achieve a ta
 
   
 ## Summary
-All attempts to reach 75% accuracy failed, and the max achieved was ~73%.  Looking at the data provided, the overall succes rate of all datapoints was 53.2%.  The initial low succes rate, in combination with factors that when indiviually viewed showed very few instances of a high success rates and high data counts, leads to a model where getting a result of even 73% was very difficult.
+All attempts to reach 75% accuracy failed, and the max achieved was ~73%.  Looking at the data provided, the overall succes rate of all datapoints was 53.2%.  The initial low succes rate, in combination with factors that when indiviually viewed showed very few instances of a high success rates and high data counts, leads to a model where getting a result of even 73% was very difficult.  (we were later told that reaching 75% is impossible - CMK 4/30/22)
